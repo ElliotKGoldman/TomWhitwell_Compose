@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "src/EKCompose.cpp"
-            timestampString = "539198290.214325"
+            timestampString = "539387444.2593991"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "171"
-            endingLineNumber = "171">
+            startingLineNumber = "179"
+            endingLineNumber = "179">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -24,11 +24,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "src/EKCompose.cpp"
-            timestampString = "539198290.214443"
+            timestampString = "539387444.259588"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "171"
-            endingLineNumber = "171">
+            startingLineNumber = "179"
+            endingLineNumber = "179">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -38,11 +38,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "src/EKCompose.cpp"
-            timestampString = "539198290.214537"
+            timestampString = "539387444.259732"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "171"
-            endingLineNumber = "171">
+            startingLineNumber = "179"
+            endingLineNumber = "179">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -52,11 +52,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "src/EKCompose.cpp"
-            timestampString = "539198290.214626"
+            timestampString = "539387444.259864"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "EKCompose::loadVectorFromXML(string name, vector&lt;string&gt; *theVector)"
             landmarkType = "7">
          </BreakpointContent>
@@ -68,12 +68,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "src/EKCompose.cpp"
-            timestampString = "539198290.21472"
+            timestampString = "539387444.25999"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "EKCompose::initializeEK()"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "EKCompose::compose()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -84,12 +84,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "src/EKCompose.cpp"
-            timestampString = "539198290.21479"
+            timestampString = "539387444.260098"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "EKCompose::compose()"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "EKCompose::saveScore(string albumTitle, ofBuffer score)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

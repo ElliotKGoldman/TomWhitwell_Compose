@@ -10,7 +10,7 @@ using namespace std;
 class EKCompose{
 public:
     
-    static bool compose();
+    static string compose();
     
 private:
     static bool initializedEK;
@@ -30,6 +30,7 @@ private:
     static vector<string> chords;
     static vector<string> sequences;
     
+    static void saveScore(string albumTitle, ofBuffer score);
     static void initializeEK();
     static void loadVectorFromXML(string name, vector<string> *theVector);
     static string randomName(int length = 6);

@@ -24,18 +24,12 @@ vector<string> EKCompose::resonances;
 vector<string> EKCompose::chords;
 vector<string> EKCompose::sequences;
 
-bool EKCompose::compose(){
+string EKCompose::compose(){
     if(!initializedEK){
         EKCompose::initializeEK();
     }
     
     string albumTitle = randomName(8);
-    
-    //score = open(albumtitle +".txt", 'a')
-    /*ofFileDialogResult saveFileResult = ofSystemSaveDialog(ofGetTimestampString() + "." + ofToLower(originalFileExtension), "Save your file");
-    if (saveFileResult.bSuccess){
-        processedImages[0].save(saveFileResult.filePath);
-    }*/
     
     ofBuffer score;
     
@@ -86,15 +80,29 @@ bool EKCompose::compose(){
             score.append(randomShape(width) + '\r');
         }
         score.append("\r\r");
+        
     }
-    
-    //If the file doesn't save, warn the user
-    if(!ofBufferToFile(albumTitle + ".txt", score)){
-        cout << "File didn't save!\n";
-    }
+    saveScore(albumTitle, score);
+    return "Album: " + albumTitle + " has been saved";
 }
 
 //Helper Functions
+
+void EKCompose::saveScore(string albumTitle, ofBuffer score){
+    
+    ofFileDialogResult saveFileResult = ofSystemSaveDialog(albumTitle+ "." + "txt", "Save your score");
+     if (saveFileResult.bSuccess){
+         //If the file doesn't save, warn the user
+         if(!ofBufferToFile(saveFileResult.filePath, score)){
+             cout << "File didn't save!\n";
+         }
+     }else{
+         cout << "Save Canceled\n";
+     }
+    
+    
+    
+}
 
 void EKCompose::initializeEK(){
     if( xml.load("composeWords.xml") ){

@@ -156,6 +156,15 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0600;
+				TargetAttributes = {
+					E4B69B5A0A3A1756003C02F2 = {
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "TomWhitwell_compose" */;
 			compatibilityVersion = "Xcode 3.2";

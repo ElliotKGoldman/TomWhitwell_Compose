@@ -3,7 +3,8 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    displayText = "";
+    displayText = "Press any key";
+    ofSetWindowShape(300, 100);
 }
 
 //--------------------------------------------------------------
@@ -15,12 +16,12 @@ void ofApp::update(){
 void ofApp::draw(){
     ofBackground(0);
     ofSetColor(255);
-    ofDrawBitmapString(displayText, 100, 100);
+    ofDrawBitmapString(displayText, 10, 20);
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-    EKCompose::compose();
+    displayText = EKCompose::compose();
 }
 
 //--------------------------------------------------------------
